@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Account - Sarah's Toybox</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sarah's Toybox accounts login page">
+    <meta name="author" content="Rachel Hale">
+    <meta name="keywords" content="Sarah's Toybox, toy, children, library">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7CMontserrat:regular,500,600,700%7COswald:300,regular,500,700%7COpen+Sans:300,regular,600,700%7CRoboto:300,regular,500,700%7CRoboto+Slab:300,regular&subset=latin%2Clatin-ext" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" rel="stylesheet" type="text/css" />-->
+     <link rel="shortcut icon" href="favicon.ico">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N31BVBJGP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8N31BVBJGP');
+    </script>
+
+</head>
+
+<body>
+<!--***************************** Header Starts Here *****************************-->
+    <header>
+         <div id="logo-head" class="logo-port">
+             <div class="container ">
+                 <div class="row logo-port-content">
+ 
+                     <div class="col-sm-12 logo-box col-md-4">
+                         <a href="index.html">
+                             <img src="images/sarahlogo.jpg" alt="Sarah's Toybox"> 
+                         </a>
+                         <a data-toggle="collapse" data-target="#nav-head" href="#nav-head" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div id="nav-head" class="nav-port">
+             <div class="container no-padding">
+                 <div class="row nav-row no-margin" style="max-height: 2px;">
+                     <div class="col-md-12 nav-coll col-sm-12">
+                         <nav>
+                             <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="products.html">Catalog</a></li>
+                                 <li><a href="about_us.html">About</a></li>
+                                 <li style="float:right;"><a href="accounts.html" id="current">My Account</a></li>
+                             </ul>
+                         </nav>
+                     </div>
+                     <!-- <div class="col-md-4 col-sm-12 cart-ap">
+                         <h4><a href="mailto:sarahstoybox@gmail.com"style="color:white; padding-left:1em; padding-bottom:5em;">Let's Get in Touch!</a></h4>
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+   </header>
+
+<!--  ************************* Page Title Starts Here ************************** -->
+    <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>My Account</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- ################# Log In Starts Here #######################--->
+    
+    <div class="login" id="login">
+        <!-- <h1 style="color:green">Javatpoint</h1> -->
+        <h3> Log In Using Your Personal Account Number </h3>
+        
+        <form onsubmit ="return verifyPassword()">
+        <!-- Enter Password -->
+        <td> Account Number </td>
+        <input type = "password" id = "pswd" value = "">
+        <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>  -->
+        <span id = "message" style="color:red"> </span> <br>
+        <input type="checkbox" onclick="toggleVisibility()"/> Show Password</br><br>
+        <!-- Click to verify valid password -->
+        <input class="btnlogin" type ="submit" value ="Submit">
+        
+        <!-- Click to reset fields -->
+        <button class="btnlogin" type ="reset" value ="Reset" >Reset</button>
+        </form>
+    </div>
+<!-- ################# Admin View Starts Here #######################--->
+    <div class="accountsummary" id="id87654321">
+        <h3 class="welcome"> Administrator View </h3>
+        <div class="container">
+            <h3 class="lefttitle">Outstanding Toys</h3>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html">  <!-- target="_blank" -->
+                            <img src="images/products/1.jpg" alt="Balls">
+                            <h5>Balls - 001</h5>
+                            <p class="checkedout">Checked Out by ID 12345678</p>
+                            <p class="checkedout">Due 12/23/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/10.jpg" alt="10">
+                            <h5>Doll - 010</h5>
+                            <p class="checkedout">Checked Out by ID 12345678</p>
+                            <p class="checkedout">Due 12/23/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/20.jpg" alt="20">
+                            <h5>Animal Blocks - 020</h5>
+                            <p class="checkedout">Checked Out by ID 23456789</p>
+                            <p class="checkedout">Due 12/30/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/15.jpg" alt="15">
+                            <h5>Play House - 015</h5>
+                            <p class="checkedout">Checked Out by ID 12345678</p>
+                            <p class="checkedout">Due 1/6/2023</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- ################# Member Accounts Start Here #######################--->
+<!-- Rachel ID 12345678 -->
+    <div class="accountsummary" id="id12345678">
+        <h3 class="welcome"> Welcome Rachel</h3>
+        <div class="container">
+            <h3 class="lefttitle">Your Current Toys</h3>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/1.jpg" alt="Balls">
+                            <h5>Balls - 001</h5>
+                            <p class="checkedout">Due 12/25/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/10.jpg" alt="10">
+                            <h5>Doll - 010</h5>
+                            <p class="checkedout">Due 12/25/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html">  
+                            <img src="images/products/15.jpg" alt="15">
+                            <h5>Play House - 015</h5>
+                            <p class="checkedout">Due 12/25/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Sarah ID 23456789 -->
+    <div class="accountsummary" id="id23456789">
+        <h3 class="welcome"> Welcome Sarah</h3>
+        <div class="container">
+            <h3 class="lefttitle">Your Current Toys</h3>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-key">
+                        <a href="products.html"> 
+                            <img src="images/products/20.jpg" alt="20">
+                            <h5>Animal Blocks - 020</h5>
+                            <p class="checkedout">Due 12/30/2022</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+       
+<!-- ################# Custom Message Starts Here #######################--->
+    <section class="custom-msg">
+        <div class="container">
+            <div class=" cust-msg">
+                    <h2>Join Our Group</h2>
+                    <p>If you are interested in participating, reach out by text to Sarah at 801-628-5899. Feel free to take a look at our available toys while we set up your account.</p>
+                    <a href="sms://+1801-628-5899;?&body=Hi%20there,%20I%20am%20reaching%20out%20to%20join%20Sarahs%20Toybox.%20How%20can%20I%20sign%20up?" class="btn btn-warning" target="_blank">Send a Message</a>
+            </div>
+        </div>
+    </section>
+
+<!-- ################# Footer Starts Here #######################--->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <h2>About Us</h2>
+                <p>We are a toy library that allows families to try new toys without the investment by checking them out through a library-style system.</p>
+            </div>
+
+            <div class="col-md-5">
+                <h2>Keep in Touch!</h2>
+                <address class="md-margin-bottom-40">
+                    West Jordan, Utah <br>
+                    Phone: <a href="tel:+1(801)6285899" target="_blank" style="color:white">801-628-5899</a><br>
+                    Facebook: <a href="https://www.facebook.com/sarah.hale.3363/" target="_blank" style="color:white">Sarah Woolston</a><br>
+                    Email: <a href="mailto:stunninglysarah@gmail.com" style="color:white">stunninglysarah@gmail.com</a><br>
+                    Web: <a href="https://www.r56910.github.io/project" style="color:white">www.r56910.github.io/project</a>
+                </address>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copy">
+    <div class="container">
+        <a href="https://www.facebook.com/sarah.hale.3363/">&copy; 2022 Sarah's Toybox. All Rights Reserved | Designed By Rachel Hale</a>
+        
+        <span>
+        <a href="https://wa.me/18016285899" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/rachel_hale/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rachelahale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/sarah.hale.3363/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </span>
+    </div>
+</div>
+
+</body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugins/slider/js/owl.carousel.min.js"></script>
+<script src="plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/passwordverify.js"></script>
+
+
+</html>

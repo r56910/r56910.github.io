@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -37,7 +37,7 @@
 
 <body>
    <!--***************************** Header Starts Here *****************************-->
-<header>
+   <header>
     <!-- <div class="top-port">
             <div class="container">
                     <div class="row top-row">
@@ -124,8 +124,8 @@
                          <ul>
                              <li><a href="index.html">Home</a></li>
                              <li><a href="products.html" id="current">Catalog</a></li>
-                             <!-- <li><a href="support.html">XXX</a></li> -->
                              <li><a href="about_us.html">About</a></li>
+                             <li style="float:right;"><a href="accounts.html">My Account</a></li>
                          </ul>
                      </nav>
                  </div>
@@ -136,645 +136,1961 @@
          </div>
      </div>
 </header>
- <!-- ######## Header End ####### -->
-  
-       <!--  ************************* Page Title Starts Here ************************** -->
+<!-- ######## Header End ####### -->
+
+<!--  ************************* Page Title Starts Here ************************** -->
 <div class="page-nav no-margin row">
     <div class="container">
         <div class="row">
-            <h2>Our Catalog</h2>
+            <h2>Toy Catalog</h2>
+        </div>
+        
+        <!-- Filter buttons -->
+
+        <div id="myBtnContainer">
+            <button class="btnfilter active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btnfilter" onclick="filterSelection('5yrs')"> 5-10 Years</button>
+            <button class="btnfilter" onclick="filterSelection('2yrs')"> 2-5 Years</button>
+            <button class="btnfilter" onclick="filterSelection('1yrs')"> 1-3 Years</button>
+            <button class="btnfilter" onclick="filterSelection('0yrs')"> 0-1 Years</button>
+            <button class="btnfilter" onclick="filterSelection('block')"> Blocks</button>
+            <button class="btnfilter" onclick="filterSelection('doll')"> Dolls</button>
+            <!-- <button class="btnfilter" onclick="filterSelection('ball')"> Balls</button> -->
+            <button class="btnfilter" onclick="filterSelection('car')"> Cars</button>
+            <button class="btnfilter" onclick="filterSelection('house')"> Play House</button>
+            <button class="btnfilter" onclick="filterSelection('art')"> Art</button>
+            <!-- <button class="btnfilter" onclick="filterSelection('animal')"> Animals</button> -->
+            <button class="btnfilter" onclick="filterSelection('boy')"> Boy</button>
         </div>
     </div>
 </div>
        
-    <!-- ######## Page  Title End ####### -->
-       
-    
-     
-     
-       
-         <!-- ################# Products Starts Here#######################--->
-     
+  
+<!-- ################# Products Starts Here#######################--->
+
 <section class="key-features">
     <div class="container">
         
         <div class="row">
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 001 -->
+            <div class="col-md-3 col-sm-4 filterDiv ball 1yrs 0yrs checkedout">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/59.jpg" alt="Train">
-                        <h5>Toy Train - 59</h5>
-                        <p>Available</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item1">
                         <img src="images/products/1.jpg" alt="Balls">
                         <h5>Balls - 001</h5>
-                        <p>Available</p>
-                    </a>
+                        <p class="checkedout">Checked Out</p>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/4.jpg" alt="Blocks">
-                        <h5>Blocks - 4</h5>
-                        <p>Available</p>
-                    </a>
+            <div class="description" id="desc1">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/1.jpg" alt="Balls" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Balls</strong> <br>
+                    Reccommended for ages 0-3 yrs <br>
+                    Toy # 001</p>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <script>
+                const targetDiv1 = document.getElementById("desc1"); // floating div
+                const btn1 = document.getElementById("item1"); // button
+                btn1.onclick = function () {
+                  if (targetDiv1.style.display !== "none") {
+                    targetDiv1.style.display = "none";
+                  } else {
+                    targetDiv1.style.display = "block";
+                  }
+                };
+            </script>
+ <!-- Toy 002 -->       
+            <div class="col-md-3 col-sm-4 filterDiv ball 2yrs 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/27.jpg" alt="Puppy">
-                        <h5>Puppy - 027</h5>
-                        <p>Available</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/9.jpg" alt="Doll">
-                        <h5>Doll - 009</h5>
-                        <p>Available</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/30.jpg" alt="Potato Head">
-                        <h5>Mr. Potato Head - 30</h5>
-                        <p>Available</p>
-                    </a>
-                </div>
-            </div>
-        
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item2">
                         <img src="images/products/2.jpg" alt="Ball">
-                        <h5>Ball - 002</h5>
+                        <h5>Shaker Ball - 002</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc2">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/2.jpg" alt="Ball" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Shaker Ball</strong> <br>
+                    Reccommended for ages 0-5 yrs <br>
+                    Toy # 002</p>
+                </div>
+            </div>
+              <script>
+                const targetDiv2 = document.getElementById("desc2"); // floating div
+                const btn2 = document.getElementById("item2"); // button
+                btn2.onclick = function () {
+                  if (targetDiv2.style.display !== "none") {
+                    targetDiv2.style.display = "none";
+                  } else {
+                    targetDiv2.style.display = "block";
+                  }
+                };
+              </script>
+<!-- Toy 003 -->
+            <div class="col-md-3 col-sm-4 filterDiv ball 2yrs 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item3">
                         <img src="images/products/3.jpg" alt="Ball">
-                        <h5>Ball - 003</h5>
+                        <h5>Textured Ball - 003</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc3">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/3.jpg" alt="Ball" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Textured Ball</strong> <br>
+                    Reccommended for ages 0-5 yrs <br>
+                    Toy # 003</p>
+                </div>
+            </div>
+              <script>
+                const targetDiv3 = document.getElementById("desc3"); // floating div
+                const btn3 = document.getElementById("item3"); // button
+                btn3.onclick = function () {
+                  if (targetDiv3.style.display !== "none") {
+                    targetDiv3.style.display = "none";
+                  } else {
+                    targetDiv3.style.display = "block";
+                  }
+                };
+              </script>
+<!-- Toy 004 -->
+            <div class="col-md-3 col-sm-4 filterDiv block 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item4">
+                        <img src="images/products/4.jpg" alt="Blocks">
+                        <h5>Blocks - 004</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc4">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/4.jpg" alt="Ball" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Blocks</strong> <br>
+                    Reccommended for ages 0-3 yrs <br>
+                    Toy # 004</p>
+                </div>
+            </div>
+              <script>
+                const targetDiv4 = document.getElementById("desc4"); // floating div
+                const btn4 = document.getElementById("item4"); // button
+                btn4.onclick = function () {
+                  if (targetDiv4.style.display !== "none") {
+                    targetDiv4.style.display = "none";
+                  } else {
+                    targetDiv4.style.display = "block";
+                  }
+                };
+              </script>
+<!-- Toy 005 -->
+            <div class="col-md-3 col-sm-4 filterDiv block 1yrs 0yrs">
+                <div class="single-key">
+                    <button class="items" id="item5">
                         <img src="images/products/5.jpg" alt="Blocks 5">
                         <h5>Blocks - 005</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc5">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/5.jpg" alt="Ball" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Blocks</strong> <br>
+                    Shapes push-through game
+                    Reccommended for ages 0-3 yrs <br>
+                    Toy # 005</p>
+                </div>
+            </div>
+              <script>
+                const targetDiv5 = document.getElementById("desc5"); // floating div
+                const btn5 = document.getElementById("item5"); // button
+                btn5.onclick = function () {
+                  if (targetDiv5.style.display !== "none") {
+                    targetDiv5.style.display = "none";
+                  } else {
+                    targetDiv5.style.display = "block";
+                  }
+                };
+              </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 006 -->
+            <div class="col-md-3 col-sm-4 filterDiv block 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item6">
                         <img src="images/products/6.jpg" alt="Block 6">
                         <h5>Block - 006</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc6">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/6.jpg" alt="Balls" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Soft Block</strong> <br>
+                    Reccommended for ages 0-3 yrs <br>
+                    Toy # 006</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv6 = document.getElementById("desc6"); // floating div
+                const btn6 = document.getElementById("item6"); // button
+                btn6.onclick = function () {
+                  if (targetDiv6.style.display !== "none") {
+                    targetDiv6.style.display = "none";
+                  } else {
+                    targetDiv6.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 007 -->
+            <div class="col-md-3 col-sm-4 filterDiv book 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item7">
                         <img src="images/products/7.jpg" alt="7">
                         <h5>Books - 007</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc7">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/7.jpg" alt="7" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Books</strong> <br>
+                    Reccommended for ages 0-3 yrs <br>
+                    Toy # 007</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv7 = document.getElementById("desc7"); // floating div
+                const btn7 = document.getElementById("item7"); // button
+                btn7.onclick = function () {
+                  if (targetDiv7.style.display !== "none") {
+                    targetDiv7.style.display = "none";
+                  } else {
+                    targetDiv7.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 008 -->
+            <div class="col-md-3 col-sm-4 filterDiv art 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item8">
                         <img src="images/products/8.jpg" alt="8">
                         <h5>Brush - 008</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc8">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/8.jpg" alt="8" class="descimg">
+                <div class="desctext">
+                    <p><strong>Painting Brush</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 008</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv8 = document.getElementById("desc8"); // floating div
+                const btn8 = document.getElementById("item8"); // button
+                btn8.onclick = function () {
+                  if (targetDiv8.style.display !== "none") {
+                    targetDiv8.style.display = "none";
+                  } else {
+                    targetDiv8.style.display = "block";
+                  }
+                };
+            </script>
+
+<!-- Toy 009 -->
+            <div class="col-md-3 col-sm-4 filterDiv doll 5yrs 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item9">
+                        <img src="images/products/9.jpg" alt="Doll">
+                        <h5>Doll - 009</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc9">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/9.jpg" alt="9" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Doll</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 009</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv9 = document.getElementById("desc9"); // floating div
+                const btn9 = document.getElementById("item9"); // button
+                btn9.onclick = function () {
+                  if (targetDiv9.style.display !== "none") {
+                    targetDiv9.style.display = "none";
+                  } else {
+                    targetDiv9.style.display = "block";
+                  }
+                };
+            </script>
+
+<!-- Toy 010 -->        
+            <div class="col-md-3 col-sm-4 filterDiv doll 5yrs 2yrs 1yrs checkedout">
+                <div class="single-key">
+                    <button class="items" id="item10">
                         <img src="images/products/10.jpg" alt="10">
                         <h5>Doll - 010</h5>
-                        <p>Available</p>
-                    </a>
+                        <p class="checkedout">Checked Out</p>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc10">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/10.jpg" alt="10" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Doll</strong> <br>
+                    Reccommended for ages 1-10 yrs <br>
+                    Toy # 010</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv10 = document.getElementById("desc10"); // floating div
+                const btn10 = document.getElementById("item10"); // button
+                btn10.onclick = function () {
+                  if (targetDiv10.style.display !== "none") {
+                    targetDiv10.style.display = "none";
+                  } else {
+                    targetDiv10.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 011 -->
+            <div class="col-md-3 col-sm-4 filterDiv art 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item11">
                         <img src="images/products/11.jpg" alt="11">
                         <h5>Drawing Pad - 011</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc11">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/11.jpg" alt="11" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Drawing Pad</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 011</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv11 = document.getElementById("desc11"); // floating div
+                const btn11 = document.getElementById("item11"); // button
+                btn11.onclick = function () {
+                  if (targetDiv11.style.display !== "none") {
+                    targetDiv11.style.display = "none";
+                  } else {
+                    targetDiv11.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 012 -->
+            <div class="col-md-3 col-sm-4 filterDiv doll 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item12">
                         <img src="images/products/12.jpg" alt="12">
                         <h5>Magnetic Dress Up - 012</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc12">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/12.jpg" alt="12" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Magnetic Dress Up</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 012</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv12 = document.getElementById("desc12"); // floating div
+                const btn12 = document.getElementById("item12"); // button
+                btn12.onclick = function () {
+                  if (targetDiv12.style.display !== "none") {
+                    targetDiv12.style.display = "none";
+                  } else {
+                    targetDiv12.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 013 -->
+            <div class="col-md-3 col-sm-4 filterDiv doll 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item13">
                         <img src="images/products/13.jpg" alt="13">
                         <h5>Dress Up - 013</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc13">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/13.jpg" alt="13" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Dress Up</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 013</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv13 = document.getElementById("desc13"); // floating div
+                const btn13 = document.getElementById("item13"); // button
+                btn13.onclick = function () {
+                  if (targetDiv13.style.display !== "none") {
+                    targetDiv13.style.display = "none";
+                  } else {
+                    targetDiv13.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 014 -->
+            <div class="col-md-3 col-sm-4 filterDiv animal 2yrs 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item14">
                         <img src="images/products/14.jpg" alt="14">
                         <h5>Duck - 014</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc14">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/14.jpg" alt="14" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Duck Cookie Cutter</strong> <br>
+                    Reccommended for ages 0-5 yrs <br>
+                    Toy # 014</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv14 = document.getElementById("desc14"); // floating div
+                const btn14 = document.getElementById("item14"); // button
+                btn14.onclick = function () {
+                  if (targetDiv14.style.display !== "none") {
+                    targetDiv14.style.display = "none";
+                  } else {
+                    targetDiv14.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 015 -->
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs checkedout">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item15">
                         <img src="images/products/15.jpg" alt="15">
                         <h5>Play House - 015</h5>
-                        <p>Available</p>
-                    </a>
+                        <p class="checkedout">Checked Out</p>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc15">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/15.jpg" alt="15" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Play House Furniture</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 015</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv15 = document.getElementById("desc15"); // floating div
+                const btn15 = document.getElementById("item15"); // button
+                btn15.onclick = function () {
+                  if (targetDiv15.style.display !== "none") {
+                    targetDiv15.style.display = "none";
+                  } else {
+                    targetDiv15.style.display = "block";
+                  }
+                };
+            </script>
+
+<!-- Toy 016 -->        
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item16">
                         <img src="images/products/16.jpg" alt="16">
                         <h5>Play House - 016</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc16">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/16.jpg" alt="16" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Play House Furniture</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 016</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv16 = document.getElementById("desc16"); // floating div
+                const btn16 = document.getElementById("item16"); // button
+                btn16.onclick = function () {
+                  if (targetDiv16.style.display !== "none") {
+                    targetDiv16.style.display = "none";
+                  } else {
+                    targetDiv16.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 017 -->
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item17">
                         <img src="images/products/17.jpg" alt="17">
                         <h5>Toy People - 017</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc17">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/17.jpg" alt="17" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Toy People</strong> <br>
+                    Reccommended for ages 1-10 yrs <br>
+                    Toy # 010</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv17 = document.getElementById("desc17"); // floating div
+                const btn17 = document.getElementById("item17"); // button
+                btn17.onclick = function () {
+                  if (targetDiv17.style.display !== "none") {
+                    targetDiv17.style.display = "none";
+                  } else {
+                    targetDiv17.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 018 -->
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item18">
                         <img src="images/products/18.jpg" alt="18">
-                        <h5>Toy People - 018</h5>
+                        <h5>Toy Firefighters - 018</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc18">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/18.jpg" alt="18" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Toy Firefighters</strong> <br>
+                    Reccommended for ages 1-10 yrs <br>
+                    Toy # 018</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv18 = document.getElementById("desc18"); // floating div
+                const btn18 = document.getElementById("item18"); // button
+                btn18.onclick = function () {
+                  if (targetDiv18.style.display !== "none") {
+                    targetDiv18.style.display = "none";
+                  } else {
+                    targetDiv18.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 019 -->
+            <div class="col-md-3 col-sm-4 filterDiv house block 2yrs 1yrs 0yrs boy">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item19">
                         <img src="images/products/19.jpg" alt="19">
                         <h5>Car Blocks - 019</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc19">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/19.jpg" alt="19" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Car Wood Blocks</strong> <br>
+                    Reccommended for ages 1-5 yrs <br>
+                    Toy # 019</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv19 = document.getElementById("desc19"); // floating div
+                const btn19 = document.getElementById("item19"); // button
+                btn19.onclick = function () {
+                  if (targetDiv19.style.display !== "none") {
+                    targetDiv19.style.display = "none";
+                  } else {
+                    targetDiv19.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 020 -->
+            <div class="col-md-3 col-sm-4 filterDiv animal house block 2yrs 1yrs 0yrs checkedout">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item20">
                         <img src="images/products/20.jpg" alt="20">
                         <h5>Animal Blocks - 020</h5>
-                        <p>Available</p>
-                    </a>
+                        <p class="checkedout">Checked Out</p>
+                    </button>
                 </div>
             </div>
+            <div class="description" id="desc20">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/20.jpg" alt="20" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Animal Wood Blocks</strong> <br>
+                    Reccommended for ages 1-5 yrs <br>
+                    Toy # 020</p>
+                </div>
+            </div>
+            <script>
+                const targetDiv20 = document.getElementById("desc20"); // floating div
+                const btn20 = document.getElementById("item20"); // button
+                btn20.onclick = function () {
+                  if (targetDiv20.style.display !== "none") {
+                    targetDiv20.style.display = "none";
+                  } else {
+                    targetDiv20.style.display = "block";
+                  }
+                };
+            </script>
 
-            <div class="col-md-3 col-sm-4">
+<!-- Toy 021 -->
+            <div class="col-md-3 col-sm-4 filterDiv block 5yrs 2yrs boy">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item21">
                         <img src="images/products/21.jpg" alt="21">
                         <h5>Legos - 021</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc21">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/21.jpg" alt="21" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Giant Lego Blocks</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 021 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv21 = document.getElementById("desc21"); // floating div
+                const btn21 = document.getElementById("item21"); // button
+                btn21.onclick = function () {
+                  if (targetDiv21.style.display !== "none") {
+                    targetDiv21.style.display = "none";
+                  } else {
+                    targetDiv21.style.display = "block";
+                  }
+                };
+            </script>
+
+<!-- Toy 022 -->        
+            <div class="col-md-3 col-sm-4 filterDiv art 5yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item22">
                         <img src="images/products/22.jpg" alt="22">
                         <h5>Lite-Brite - 022</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc22">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/22.jpg" alt="22" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Lite-Brite</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 022 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv22 = document.getElementById("desc22"); // floating div
+                const btn22 = document.getElementById("item22"); // button
+                btn22.onclick = function () {
+                  if (targetDiv22.style.display !== "none") {
+                    targetDiv22.style.display = "none";
+                  } else {
+                    targetDiv22.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 023 -->
+            <div class="col-md-3 col-sm-4 filterDiv art 5yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item23">
                         <img src="images/products/23.jpg" alt="23">
                         <h5>Light Toy - 023</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc23">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/23.jpg" alt="23" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Light Draw Pad</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 023 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv23 = document.getElementById("desc23"); // floating div
+                const btn23 = document.getElementById("item23"); // button
+                btn23.onclick = function () {
+                  if (targetDiv23.style.display !== "none") {
+                    targetDiv23.style.display = "none";
+                  } else {
+                    targetDiv23.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 024 -->
+            <div class="col-md-3 col-sm-4 filterDiv animal 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item24">
                         <img src="images/products/24.jpg" alt="24">
                         <h5>Toy - 024</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc24">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/24.jpg" alt="24" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Toy</strong> <br>
+                    Reccommended for ages 0-2 yrs <br>
+                    Toy # 024 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv24 = document.getElementById("desc24"); // floating div
+                const btn24 = document.getElementById("item24"); // button
+                btn24.onclick = function () {
+                  if (targetDiv24.style.display !== "none") {
+                    targetDiv24.style.display = "none";
+                  } else {
+                    targetDiv24.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 025 -->
+            <div class="col-md-3 col-sm-4 filterDiv block 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item25">
                         <img src="images/products/25.jpg" alt="25">
-                        <h5>Toy - 025</h5>
+                        <h5>Wood Shaker Toy - 025</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc25">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/25.jpg" alt="25" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Wood Shaker Toy</strong> <br>
+                    Reccommended for ages 0-2 yrs <br>
+                    Toy # 025 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv25 = document.getElementById("desc25"); // floating div
+                const btn25 = document.getElementById("item25"); // button
+                btn25.onclick = function () {
+                  if (targetDiv25.style.display !== "none") {
+                    targetDiv25.style.display = "none";
+                  } else {
+                    targetDiv25.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 026 -->
+            <div class="col-md-3 col-sm-4 filterDiv art 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item26">
                         <img src="images/products/26.jpg" alt="26">
                         <h5>Scissors - 026</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc26">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/26.jpg" alt="26" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Small Scissors</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 026 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv26 = document.getElementById("desc26"); // floating div
+                const btn26 = document.getElementById("item26"); // button
+                btn26.onclick = function () {
+                  if (targetDiv26.style.display !== "none") {
+                    targetDiv26.style.display = "none";
+                  } else {
+                    targetDiv26.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 027 -->
+            <div class="col-md-3 col-sm-4 filterDiv animal 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item27">
+                        <img src="images/products/27.jpg" alt="Puppy">
+                        <h5>Puppy - 027</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc27">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/27.jpg" alt="27" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Pull Puppy</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 027 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv27 = document.getElementById("desc27"); // floating div
+                const btn27 = document.getElementById("item27"); // button
+                btn27.onclick = function () {
+                  if (targetDiv27.style.display !== "none") {
+                    targetDiv27.style.display = "none";
+                  } else {
+                    targetDiv27.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 028 -->
+            <div class="col-md-3 col-sm-4 filterDiv ball 1yrs 0yrs">
+                <div class="single-key">
+                    <button class="items" id="item28">
                         <img src="images/products/28.jpg" alt="28">
                         <h5>Frog Ball - 028</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc28">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/28.jpg" alt="28" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Frog Shaker Ball</strong> <br>
+                    Reccommended for ages 0-2 yrs <br>
+                    Toy # 028 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv28 = document.getElementById("desc28"); // floating div
+                const btn28 = document.getElementById("item28"); // button
+                btn28.onclick = function () {
+                  if (targetDiv28.style.display !== "none") {
+                    targetDiv28.style.display = "none";
+                  } else {
+                    targetDiv28.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 029 -->
+            <div class="col-md-3 col-sm-4 filterDiv animal 1yrs 0yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item29">
                         <img src="images/products/29.jpg" alt="29">
                         <h5>Zebra - 029</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc29">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/29.jpg" alt="29" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Zebra with Suction Cup</strong> <br>
+                    Reccommended for ages 0-2 yrs <br>
+                    Toy # 029 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv29 = document.getElementById("desc29"); // floating div
+                const btn29 = document.getElementById("item29"); // button
+                btn29.onclick = function () {
+                  if (targetDiv29.style.display !== "none") {
+                    targetDiv29.style.display = "none";
+                  } else {
+                    targetDiv29.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 030 -->            
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item30">
+                        <img src="images/products/30.jpg" alt="Potato Head">
+                        <h5>Mr. Potato Head - 30</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc30">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/30.jpg" alt="30" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Retro Mr. Potato Head</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 030 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv30 = document.getElementById("desc30"); // floating div
+                const btn30 = document.getElementById("item30"); // button
+                btn30.onclick = function () {
+                  if (targetDiv30.style.display !== "none") {
+                    targetDiv30.style.display = "none";
+                  } else {
+                    targetDiv30.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 031 -->  
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs 2yrs">
+                <div class="single-key">
+                    <button class="items" id="item31">
                         <img src="images/products/31.jpg" alt="31">
                         <h5>Mrs. Potato Head - 031</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc31">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/31.jpg" alt="31" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Mrs. Potato Head</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 031 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv31 = document.getElementById("desc31"); // floating div
+                const btn31 = document.getElementById("item31"); // button
+                btn31.onclick = function () {
+                  if (targetDiv31.style.display !== "none") {
+                    targetDiv31.style.display = "none";
+                  } else {
+                    targetDiv31.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 032 -->  
+            <div class="col-md-3 col-sm-4 filterDiv house doll 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item32">
                         <img src="images/products/32.jpg" alt="32">
-                        <h5>Mr. Potato Head Friend - 032</h5>
+                        <h5>Mr. Potato Head - 032</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc32">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/32.jpg" alt="32" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Mr. Potato Head</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 032 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv32 = document.getElementById("desc32"); // floating div
+                const btn32 = document.getElementById("item32"); // button
+                btn32.onclick = function () {
+                  if (targetDiv32.style.display !== "none") {
+                    targetDiv32.style.display = "none";
+                  } else {
+                    targetDiv32.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 033 -->  
+            <div class="col-md-3 col-sm-4 filterDiv doll 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item33">
                         <img src="images/products/33.jpg" alt="33">
                         <h5>Robot - 033</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc33">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/33.jpg" alt="33" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Robot</strong> <br>
+                    Reccommended for ages 1-5 yrs <br>
+                    Toy # 033 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv33 = document.getElementById("desc33"); // floating div
+                const btn33 = document.getElementById("item33"); // button
+                btn33.onclick = function () {
+                  if (targetDiv33.style.display !== "none") {
+                    targetDiv33.style.display = "none";
+                  } else {
+                    targetDiv33.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 034 -->  
+            <div class="col-md-3 col-sm-4 filterDiv blocks art 5yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item34">
                         <img src="images/products/34.jpg" alt="34">
                         <h5>Square Block - 34</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc34">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/34.jpg" alt="34" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Square Block</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 034 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv34 = document.getElementById("desc34"); // floating div
+                const btn34 = document.getElementById("item34"); // button
+                btn34.onclick = function () {
+                  if (targetDiv34.style.display !== "none") {
+                    targetDiv34.style.display = "none";
+                  } else {
+                    targetDiv34.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 035 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item35">
                         <img src="images/products/35.jpg" alt="35">
                         <h5>Truck - 035</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc35">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/35.jpg" alt="35" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 035 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv35 = document.getElementById("desc35"); // floating div
+                const btn35 = document.getElementById("item35"); // button
+                btn35.onclick = function () {
+                  if (targetDiv35.style.display !== "none") {
+                    targetDiv35.style.display = "none";
+                  } else {
+                    targetDiv35.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 036 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item36">
                         <img src="images/products/36.jpg" alt="36">
-                        <h5>Truck - 036</h5>
+                        <h5>Semi Truck - 036</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc36">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/36.jpg" alt="36" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Semi Truck</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 036 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv36 = document.getElementById("desc36"); // floating div
+                const btn36 = document.getElementById("item36"); // button
+                btn36.onclick = function () {
+                  if (targetDiv36.style.display !== "none") {
+                    targetDiv36.style.display = "none";
+                  } else {
+                    targetDiv36.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 037 -->          
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item37">
                         <img src="images/products/37.jpg" alt="37">
                         <h5>Truck - 037</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc37">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/37.jpg" alt="37" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 037 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv37 = document.getElementById("desc37"); // floating div
+                const btn37 = document.getElementById("item37"); // button
+                btn37.onclick = function () {
+                  if (targetDiv37.style.display !== "none") {
+                    targetDiv37.style.display = "none";
+                  } else {
+                    targetDiv37.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 038 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item38">
                         <img src="images/products/38.jpg" alt="38">
                         <h5>Truck - 038</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc38">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/38.jpg" alt="38" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 038 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv38 = document.getElementById("desc38"); // floating div
+                const btn38 = document.getElementById("item38"); // button
+                btn38.onclick = function () {
+                  if (targetDiv38.style.display !== "none") {
+                    targetDiv38.style.display = "none";
+                  } else {
+                    targetDiv38.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 039 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item39">
                         <img src="images/products/39.jpg" alt="39">
-                        <h5>Truck - 039</h5>
+                        <h5>Car - 039</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc39">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/39.jpg" alt="39" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Silver Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 039 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv39 = document.getElementById("desc39"); // floating div
+                const btn39 = document.getElementById("item39"); // button
+                btn39.onclick = function () {
+                  if (targetDiv39.style.display !== "none") {
+                    targetDiv39.style.display = "none";
+                  } else {
+                    targetDiv39.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 040 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item40">
                         <img src="images/products/40.jpg" alt="40">
                         <h5>Truck - 040</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc40">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/40.jpg" alt="40" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 1-10 yrs <br>
+                    Toy # 040 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv40 = document.getElementById("desc40"); // floating div
+                const btn40 = document.getElementById("item40"); // button
+                btn40.onclick = function () {
+                  if (targetDiv40.style.display !== "none") {
+                    targetDiv40.style.display = "none";
+                  } else {
+                    targetDiv40.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 041 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item41">
                         <img src="images/products/41.jpg" alt="41">
-                        <h5>Truck - 041</h5>
+                        <h5>Fire Truck - 041</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc41">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/41.jpg" alt="41" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Fire Truck</strong> <br>
+                    Reccommended for ages 1-10 yrs <br>
+                    Toy # 041 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv41 = document.getElementById("desc41"); // floating div
+                const btn41 = document.getElementById("item41"); // button
+                btn41.onclick = function () {
+                  if (targetDiv41.style.display !== "none") {
+                    targetDiv41.style.display = "none";
+                  } else {
+                    targetDiv41.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 042 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item42">
                         <img src="images/products/42.jpg" alt="42">
                         <h5>Truck - 042</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc42">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/42.jpg" alt="42" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 042 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv42 = document.getElementById("desc42"); // floating div
+                const btn42 = document.getElementById("item42"); // button
+                btn42.onclick = function () {
+                  if (targetDiv42.style.display !== "none") {
+                    targetDiv42.style.display = "none";
+                  } else {
+                    targetDiv42.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 043 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item43">
                         <img src="images/products/43.jpg" alt="43">
                         <h5>Truck - 043</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc43">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/43.jpg" alt="43" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 043 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv43 = document.getElementById("desc43"); // floating div
+                const btn43 = document.getElementById("item43"); // button
+                btn43.onclick = function () {
+                  if (targetDiv43.style.display !== "none") {
+                    targetDiv43.style.display = "none";
+                  } else {
+                    targetDiv43.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 044 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item44">
                         <img src="images/products/44.jpg" alt="44">
                         <h5>Truck - 044</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc44">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/44.jpg" alt="44" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 044 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv44 = document.getElementById("desc44"); // floating div
+                const btn44 = document.getElementById("item44"); // button
+                btn44.onclick = function () {
+                  if (targetDiv44.style.display !== "none") {
+                    targetDiv44.style.display = "none";
+                  } else {
+                    targetDiv44.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 045 -->        
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item45">
                         <img src="images/products/45.jpg" alt="45">
-                        <h5>Truck - 045</h5>
+                        <h5>Car - 045</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc45">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/45.jpg" alt="45" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 045 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv45 = document.getElementById("desc45"); // floating div
+                const btn45 = document.getElementById("item45"); // button
+                btn45.onclick = function () {
+                  if (targetDiv45.style.display !== "none") {
+                    targetDiv45.style.display = "none";
+                  } else {
+                    targetDiv45.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 046 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item46">
                         <img src="images/products/46.jpg" alt="46">
                         <h5>Truck - 046</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc46">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/46.jpg" alt="46" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Monster Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 046 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv46 = document.getElementById("desc46"); // floating div
+                const btn46 = document.getElementById("item46"); // button
+                btn46.onclick = function () {
+                  if (targetDiv46.style.display !== "none") {
+                    targetDiv46.style.display = "none";
+                  } else {
+                    targetDiv46.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 047 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item47">
                         <img src="images/products/47.jpg" alt="47">
-                        <h5>Truck - 047</h5>
+                        <h5>Car - 047</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc47">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/47.jpg" alt="47" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 047 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv47 = document.getElementById("desc47"); // floating div
+                const btn47 = document.getElementById("item47"); // button
+                btn47.onclick = function () {
+                  if (targetDiv47.style.display !== "none") {
+                    targetDiv47.style.display = "none";
+                  } else {
+                    targetDiv47.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 048 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item48">
                         <img src="images/products/48.jpg" alt="48">
-                        <h5>Truck - 048</h5>
+                        <h5>Tank - 048</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc48">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/48.jpg" alt="48" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Army Tank</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 048 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv48 = document.getElementById("desc48"); // floating div
+                const btn48 = document.getElementById("item48"); // button
+                btn48.onclick = function () {
+                  if (targetDiv48.style.display !== "none") {
+                    targetDiv48.style.display = "none";
+                  } else {
+                    targetDiv48.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 049 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item49">
                         <img src="images/products/49.jpg" alt="49">
-                        <h5>Truck - 049</h5>
+                        <h5>Monster Truck - 049</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc49">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/49.jpg" alt="49" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Monster Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 049 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv49 = document.getElementById("desc49"); // floating div
+                const btn49 = document.getElementById("item49"); // button
+                btn49.onclick = function () {
+                  if (targetDiv49.style.display !== "none") {
+                    targetDiv49.style.display = "none";
+                  } else {
+                    targetDiv49.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 050 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item50">
                         <img src="images/products/50.jpg" alt="50">
-                        <h5>Truck - 050</h5>
+                        <h5>Car - 050</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc50">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/50.jpg" alt="50" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 050 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv50 = document.getElementById("desc50"); // floating div
+                const btn50 = document.getElementById("item50"); // button
+                btn50.onclick = function () {
+                  if (targetDiv50.style.display !== "none") {
+                    targetDiv50.style.display = "none";
+                  } else {
+                    targetDiv50.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 051 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item51">
                         <img src="images/products/51.jpg" alt="51">
-                        <h5>Truck - 051</h5>
+                        <h5>Dump Truck - 051</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc51">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/51.jpg" alt="51" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Lego Dump Truck</strong> <br>
+                    Reccommended for ages 1-5 yrs <br>
+                    Toy # 051 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv51 = document.getElementById("desc51"); // floating div
+                const btn51 = document.getElementById("item51"); // button
+                btn51.onclick = function () {
+                  if (targetDiv51.style.display !== "none") {
+                    targetDiv51.style.display = "none";
+                  } else {
+                    targetDiv51.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 052 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item52">
                         <img src="images/products/52.jpg" alt="52">
-                        <h5>Truck - 052</h5>
+                        <h5>Race Car - 052</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc52">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/52.jpg" alt="52" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Race Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 052 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv52 = document.getElementById("desc52"); // floating div
+                const btn52 = document.getElementById("item52"); // button
+                btn52.onclick = function () {
+                  if (targetDiv52.style.display !== "none") {
+                    targetDiv52.style.display = "none";
+                  } else {
+                    targetDiv52.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 053 -->        
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item53">
                         <img src="images/products/53.jpg" alt="53">
-                        <h5>Truck - 053</h5>
+                        <h5>Car - 053</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc53">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/53.jpg" alt="53" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 053 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv53 = document.getElementById("desc53"); // floating div
+                const btn53 = document.getElementById("item53"); // button
+                btn53.onclick = function () {
+                  if (targetDiv53.style.display !== "none") {
+                    targetDiv53.style.display = "none";
+                  } else {
+                    targetDiv53.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 054 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item54">
                         <img src="images/products/54.jpg" alt="54">
-                        <h5>Truck - 054</h5>
+                        <h5>Ice Cream Truck - 054</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc54">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/54.jpg" alt="54" class="descimg">
+                <div class="desctext">    
+                    <p><strong>HIce Cream Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 054 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv54 = document.getElementById("desc54"); // floating div
+                const btn54 = document.getElementById("item54"); // button
+                btn54.onclick = function () {
+                  if (targetDiv54.style.display !== "none") {
+                    targetDiv54.style.display = "none";
+                  } else {
+                    targetDiv54.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 055 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item55">
                         <img src="images/products/55.jpg" alt="55">
-                        <h5>Truck - 055</h5>
+                        <h5>Monster Truck - 055</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc55">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/55.jpg" alt="55" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Monster Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 055 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv55 = document.getElementById("desc55"); // floating div
+                const btn55 = document.getElementById("item55"); // button
+                btn55.onclick = function () {
+                  if (targetDiv55.style.display !== "none") {
+                    targetDiv55.style.display = "none";
+                  } else {
+                    targetDiv55.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 056 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item56">
                         <img src="images/products/56.jpg" alt="56">
-                        <h5>Truck - 056</h5>
+                        <h5>Dump Truck - 056</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc56">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/56.jpg" alt="56" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Dump Truck</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 056 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv56 = document.getElementById("desc56"); // floating div
+                const btn56 = document.getElementById("item56"); // button
+                btn56.onclick = function () {
+                  if (targetDiv56.style.display !== "none") {
+                    targetDiv56.style.display = "none";
+                  } else {
+                    targetDiv56.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 057 -->
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item57">
                         <img src="images/products/57.jpg" alt="57">
-                        <h5>Truck - 057</h5>
+                        <h5>Monster Truck - 057</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/60.jpg" alt="60">
-                        <h5>Truck - 060</h5>
-                        <p>Available</p>
-                    </a>
+            <div class="description" id="desc57">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/57.jpg" alt="57" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Monster Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 057 </p>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+            <script>
+                const targetDiv57 = document.getElementById("desc57"); // floating div
+                const btn57 = document.getElementById("item57"); // button
+                btn57.onclick = function () {
+                  if (targetDiv57.style.display !== "none") {
+                    targetDiv57.style.display = "none";
+                  } else {
+                    targetDiv57.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 058 -->
+            <div class="col-md-3 col-sm-4 filterDiv train 5yrs 2yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item58">
+                        <img src="images/products/58.jpg" alt="58">
+                        <h5>Car - 058</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc58">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/58.jpg" alt="58" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Hot Wheels Car</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 058 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv58 = document.getElementById("desc58"); // floating div
+                const btn58 = document.getElementById("item58"); // button
+                btn58.onclick = function () {
+                  if (targetDiv58.style.display !== "none") {
+                    targetDiv58.style.display = "none";
+                  } else {
+                    targetDiv58.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 059 -->
+            <div class="col-md-3 col-sm-4 filterDiv train 2yrs 5yrs">
+                <div class="single-key">
+                    <button class="items" id="item59">
+                        <img src="images/products/59.jpg" alt="59">
+                        <h5>Toy Train - 059</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc59">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/59.jpg" alt="59" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Toy Train</strong> <br>
+                    Reccommended for ages 2-10 yrs <br>
+                    Toy # 059 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv59 = document.getElementById("desc59"); // floating div
+                const btn59 = document.getElementById("item59"); // button
+                btn59.onclick = function () {
+                  if (targetDiv59.style.display !== "none") {
+                    targetDiv59.style.display = "none";
+                  } else {
+                    targetDiv59.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 060 -->  
+            <div class="col-md-3 col-sm-4 filterDiv car 5yrs">
+                <div class="single-key">
+                    <button class="items" id="item60">
                         <img src="images/products/60.jpg" alt="60">
                         <h5>Helicopter - 060</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-        
-            <div class="col-md-3 col-sm-4">
+            <div class="description" id="desc60">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/60.jpg" alt="60" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Helicopter</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 060 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv60 = document.getElementById("desc60"); // floating div
+                const btn60 = document.getElementById("item60"); // button
+                btn60.onclick = function () {
+                  if (targetDiv60.style.display !== "none") {
+                    targetDiv60.style.display = "none";
+                  } else {
+                    targetDiv60.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 061 -->        
+            <div class="col-md-3 col-sm-4 filterDiv car 2yrs 1yrs">
                 <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
+                    <button class="items" id="item61">
                         <img src="images/products/61.jpg" alt="61">
                         <h5>Submarine - 061</h5>
                         <p>Available</p>
-                    </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
-                <div class="single-key">
-                    <a href="products.html">  <!-- target="_blank" -->
-                        <img src="images/products/62.jpg" alt="62">
-                        <h5>Wooden Play Kit - 062</h5>
-                        <p>Available</p>
-                    </a>
+            <div class="description" id="desc61">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/61.jpg" alt="61" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Helicopter</strong> <br>
+                    Reccommended for ages 1-5 yrs <br>
+                    Toy # 061 </p>
                 </div>
-            </div>       
+            </div>
+            <script>
+                const targetDiv61 = document.getElementById("desc61"); // floating div
+                const btn61 = document.getElementById("item61"); // button
+                btn61.onclick = function () {
+                  if (targetDiv61.style.display !== "none") {
+                    targetDiv61.style.display = "none";
+                  } else {
+                    targetDiv61.style.display = "block";
+                  }
+                };
+            </script>
+ 
+<!-- Toy 062 -->  
+            <div class="col-md-3 col-sm-4 filterDiv house block 5yrs 2yrs">
+                <div class="single-key">
+                    <button class="items" id="item62">
+                        <img src="images/products/62.jpg" alt="62">
+                        <h5>Montessori Play Kit - 062</h5>
+                        <p>Available</p>
+                    </button>
+                </div>
+            </div>
+            <div class="description" id="desc62">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/products/62.jpg" alt="62" class="descimg">
+                <div class="desctext">    
+                    <p><strong>Montessori Wooden House Play Kit</strong> <br>
+                    Reccommended for ages 5-10 yrs <br>
+                    Toy # 062 </p>
+                </div>
+            </div>
+            <script>
+                const targetDiv62 = document.getElementById("desc62"); // floating div
+                const btn62 = document.getElementById("item62"); // button
+                btn62.onclick = function () {
+                  if (targetDiv62.style.display !== "none") {
+                    targetDiv62.style.display = "none";
+                  } else {
+                    targetDiv62.style.display = "block";
+                  }
+                };
+            </script>
+        
         
         
         </div>  
@@ -801,9 +2117,9 @@
                 <address class="md-margin-bottom-40">
                     West Jordan, Utah <br>
                     Phone: <a href="tel:+1(801)6285899" target="_blank" style="color:white">801-628-5899</a><br>
-                    Facebook: <a href="https://wa.me/51914955957" target="_blank" style="color:white">801-628-5899.</a><br>
-                    Email: <a href="mailto:ventas@oym-instalaciones.com" style="color:white">ventas@oym-instalaciones.com</a><br>
-                    Web: <a href="https://www.oym-instalaciones.com/" style="color:white">www.oym-instalaciones.com</a>
+                    Facebook: <a href="https://www.facebook.com/sarah.hale.3363/" target="_blank" style="color:white">Sarah Woolston</a><br>
+                    Email: <a href="mailto:stunninglysarah@gmail.com" style="color:white">stunninglysarah@gmail.com</a><br>
+                    Web: <a href="https://www.r56910.github.io/project" style="color:white">www.r56910.github.io/project</a>
                 </address>
 
             </div>
@@ -813,18 +2129,17 @@
 
 </footer>
 <div class="copy">
-        <div class="container">
-            <a href="https://www.smarteyeapps.com/">&copy; 2022 O&M Ingeniería e Instalaciones. All Rights Reserved | Designed By Rachel Hale</a>
-            
-            <span>
-            <a href="https://wa.me/51914955957" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/rachel_hale/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rachelahale/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/oym.ingenieria.instalaciones/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    </span>
-        </div>
-
+    <div class="container">
+        <a href="https://www.facebook.com/sarah.hale.3363/">&copy; 2022 Sarah's Toybox. All Rights Reserved | Designed By Rachel Hale</a>
+        
+        <span>
+        <a href="https://wa.me/18016285899" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/rachel_hale/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rachelahale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/sarah.hale.3363/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </span>
     </div>
+</div>
 
 </body>
 
@@ -834,6 +2149,8 @@
 <script src="plugins/slider/js/owl.carousel.min.js"></script>
 <script src="plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/productfilter.js"></script>
+<script src="js/productdescription.js"></script>
 
 
 
