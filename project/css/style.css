@@ -770,6 +770,9 @@ header {
         display: none; } }
 
 /* ===================================== About Us CSS ================================== */
+#aboutimg {
+  max-width: 100%;
+}
 .with-medical {
   padding: 50px;
   background-color: #FFF; }
@@ -858,6 +861,10 @@ header {
   content: "\2796"; }
 
 /* ===================================== Catalog Filter  ================================== */
+span.h5{
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; 
+}
 .filterDiv {
   display: none;
 }
